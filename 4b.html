@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" placeholder="Nhập vào" id="m1">
+<button onclick="operator()">=</button>
+<p id="kq">Kết quả</p>
+<script>
+    let m1 = document.getElementById('m1')
+    function operator() {
+        let lmht = (parseInt(m1.value) * parseInt(m1.value) * parseInt(m1.value));
+        document.getElementById('kq').innerHTML = lmht
+    }
+ //C2 :
+  //  let inputA;
+ //   inputA = prompt ("Nhập A");
+   // let A = parseInt(inputA);
+   // let KQ = A*A*A;
+  //  document.write("L="+KQ);
+
+</script>
+</body>
+</html>

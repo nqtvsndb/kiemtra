@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>S=a*b</h1>
+<input type="number" placeholder="Nhập vào" id="a1">
+<input type="number" placeholder="Nhập vào" id="a2">
+<button onclick="operator()">=</button>
+<p id="kq">Kết quả</p>
+<script>
+    let a1 = document.getElementById('a1')
+    let a2 = document.getElementById('a2')
+    function operator() {
+        let abc = (parseInt(a1.value) * parseInt(a2.value))
+        document.getElementById('kq').innerHTML = abc
+    }
+</script>
+</body>
+</html>
